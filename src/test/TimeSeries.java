@@ -78,8 +78,6 @@ public class TimeSeries {
 	public Float getNum(int f,int v){
 		return getPair(f).column.get(v);
 	}
-
-
 	public int getSizeTable(){
 		return this.Table.size();
 	}

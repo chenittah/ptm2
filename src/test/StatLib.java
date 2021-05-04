@@ -1,6 +1,8 @@
 package test;
 
 
+import java.util.ArrayList;
+
 public class StatLib {
 
 	// simple average
@@ -69,6 +71,11 @@ public class StatLib {
 	public static float dev(Point p,Line l){
 		float num = Math.abs(((l.a*p.x)+l.b)-p.y);
 		return num;
+	}
+
+	public static float Zscore(ArrayList<Float> x, float X)
+	{
+		return  (float) (Math.abs(X-avg(x))/(var(x)*var(x)));
 	}
 
 	public static double distance(Point a, Point b){
